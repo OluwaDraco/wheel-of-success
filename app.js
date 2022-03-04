@@ -31,17 +31,23 @@
             }        
         }
     
-        function checkLetter(){
-            let match = qwerty 
+        function checkLetter(para){
+            let match = null
             const checkLetter = document.getElementsByClassName('letter')
-            console.log(checkLetter);
-            
-        }
+            for(let i=0;i<checkLetter.length;i++){
+                if(checkLetter[i].textContent == para){
+                    checkLetter[i].classList.add('show');
+                    match.textContent =checkLetter[i];
+                    
 
-        const q = getRandomPhraseAsArray(phrases)
-        addPhraseToDisplay(q);
-        checkLetter();
+                }
+                }
+                return match;
+            }
             
+        
+
+        
         
  
    
