@@ -5,11 +5,11 @@
     const overlay =document.getElementById('overlay');
 
     let missed = 0;
-    const phrases= 
-    ['shola is a good boy',
-    'muyiwa is a good boy',
-    'kemi is a good boy',
-    'i like food']
+    const phrases= [
+    "Fortune favors the bold." ,
+    "When life gives you lemons, make lemonade.",
+    "Knowledge is power.",
+    "Get busy living or get busy dying"]
 
 
     function getRandomPhraseAsArray(arr){
@@ -28,6 +28,10 @@
                 ul.appendChild(li);
 
                 }
+            else{
+                li.classList= 'space';
+                ul.appendChild(li);
+            }
            
             }        
         }
@@ -55,7 +59,7 @@
         
             qwerty.addEventListener('click', (event)=>{
                let target = event.target;
-              if(target.tagName='BUTTON' && target.className !== 'chosen'){
+              if(target.tagName === 'BUTTON' && target.className !== 'chosen'){
                   target.className=('chosen');
                   target.disable = true;
                   const foundLetter = checkLetter(target);
