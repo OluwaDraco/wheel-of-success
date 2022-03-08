@@ -6,10 +6,12 @@
 
     let missed = 0;
     const phrases= [
-    "Fortune favors the bold." ,
-    "When life gives you lemons, make lemonade.",
-    "Knowledge is power.",
-    "Get busy living or get busy dying"]
+    "fortune favors the bold" ,
+    "when life gives you lemons make lemonade",
+    "knowledge is power",
+    "get busy living or get busy dying",
+    "dedication is a talent all on its own"
+]
 
 
     function getRandomPhraseAsArray(arr){
